@@ -1,0 +1,89 @@
+<doctype !html>
+  <title>my transformation</title>
+  <head>
+  <style>
+        div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.border:hover {
+transition: border-width 3px; linear;
+ border: solid 5px green;
+  border-width: 10px; }
+</style>
+</head>
+<body>
+  <div class="border"> <h1>border</h1></div>
+</body>
+
+
+  <head>
+<style>
+body {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  width: 40%;
+  justify-content: center;
+  }
+
+.squaretocircle {
+  background: grey;
+  clip-path: circle(75%);
+  height: 200px;
+  transition: clip-path 1s;
+  width: 200px;
+}
+
+.squaretocircle:hover {
+  clip-path: circle(25%);
+}
+
+</style>
+</head>
+<body>
+  <div class="squaretocircle" style="text-align: center;"><h1>Square to circle</h1></div>
+</body>
+
+
+
+
+<head>
+  <style>
+    div {
+   align-items: center;
+   width: 300px;
+  height: 100px;
+  justify-content: center;
+  background-color: yellow;
+  border: 1px solid black;
+}
+  .rotate:hover {
+  -ms-transform: rotate(40deg); /* IE 9 */
+  transform: rotate(40deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+  <div class="rotate" ><h1>rotate</h1> </div>  
+</body>
+
+<head>
+   <style>
+    div {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+.scale:hover {
+    -ms-transform: scale(2,2); /* IE 9 */
+  transform: scale(2,2); /* Standard syntax */
+}
+  </style>
+</head>
+<body>
+  <div class="scale"><h1>grow</h1></div>
+</body>
